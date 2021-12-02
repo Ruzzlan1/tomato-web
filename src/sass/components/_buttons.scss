@@ -1,0 +1,68 @@
+@use '../abstracts/mixins' as *;
+@use '../base/root' as *;
+
+.btn {
+    display: block;
+    border-radius: 0;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    touch-action: manipulation;
+
+    &:hover,
+    &:focus {
+        color: #333;
+        text-decoration: none;
+    }
+
+    &-primary {
+        background-color: var(--color-gold);
+        width: 100%;
+        display: block;
+        color: #333;
+        &:hover,
+        &:focus {
+            background-color: var(--dark-gold);
+            border-color: var(--dark-gold);
+        }
+    }
+    &-lg {
+        font-weight: 700;
+        padding: 1.125em 2.5em;
+    }
+
+    &-sm {
+        font-weight: 700;
+        padding: 10px 0;
+        text-align: center;
+        max-width: 50%;
+        @include mq(lg) {
+            font-size: 1rem;
+            min-width: 42%;
+            max-width: 43%;
+        }
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-secondary {
+        color: #8c8881;
+        background-color: #e9e5dd;
+        border: 1px solid #e9e5dd;
+
+        &:hover {
+            background-color: #d5cdbe;
+            border: 1px solid #e9e5dd;
+            color: #333;
+        }
+    }
+}
+
+@include mq(lg) {
+    .btn-lg {
+        font-size: 1rem;
+    }
+}

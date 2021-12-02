@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tomato Web</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/plugins/timepicker/dist/jquery-clockpicker.min.css" />
+        <link rel="stylesheet" href="/node_modules/@chenfengyuan/datepicker/dist/datepicker.min.css" />
+        <link rel="stylesheet" href="assets/style.css" />
+    </head>
+    <body>
+        <section class="page-header">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-md">
+                        <h2 class="heading-1">reservation</h2>
+                        <p class="text-1">Tomato is a delicious restaurant website template</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reservation" id="reservation">
+            <div class="container">
+                <div class="row">
+                    <div class="section-header">
+                        <h1 class="heading-2">Reservations</h1>
+                        <p class="text-2">Book a table online. Leads will reach in your email.</p>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <form action="#" class="form">
+                        <div class="row grid-2">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="datepicker">Date</label>
+                                    <input type="text" data-toggle="datepicker" class="form-control" placeholder="Pick a date" id="datepicker" title="Please choose a date" required />
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" placeholder="Full Name" id="name" title="Your full name please" required />
+                                    <i class="fa fa-pencil-square"></i>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="timepicker">Time</label>
+                                    <input type="text" class="form-control" placeholder="Pick a time" id="timepicker" title="Choose preferred time" name="time" required value="" />
+                                    <i class="fa fa-clock"></i>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Your Email ID" id="email" title="Please enter your email ID" required />
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="guests">Guests</label>
+                                    <input type="number" class="form-control input-number–noSpinners" placeholder="How many of you" id="guests" title="Please enter number of guests" required />
+                                    <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter your phone number" id="datepicker" title="Please enter your phone number" required />
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-grid">
+                            <div class="reservation-btn">
+                                <button type="submit" class="btn btn-primary btn-lg btn-center">Make Reservation</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="reservation-footer">
+                    <p>
+                        You can also call:
+                        <strong>+994 70 834 16 76</strong>
+                        to make a reservation.
+                    </p>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="/plugins/timepicker/dist/jquery-clockpicker.min.js"></script>
+        <script src="/node_modules/@chenfengyuan/datepicker/dist/datepicker.min.js"></script>
+        <script src="/src/main.js"></script>
+    </body>
+</html>
