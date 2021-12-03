@@ -31,7 +31,7 @@
 // Services
 
 .services {
-    background: #1b1e20 url(/images/services.jpg) no-repeat center top;
+    background: #1b1e20 url(../../../images/services.jpg) no-repeat center top;
     background-size: cover;
     padding-bottom: 95px;
     z-index: 1;
@@ -110,7 +110,7 @@
 
 .trusted {
     &-quote {
-        background: url(/images/testimonals.png) no-repeat center center fixed;
+        background: url(../../../images/testimonals.png) no-repeat center center fixed;
         background-size: cover;
         text-align: center;
         color: var(--white);
