@@ -15,7 +15,7 @@
     }
     &-box__info {
         p {
-            color: #6b6b6b;
+            color: #6b6b6b !important;
             font-size: 0.9375rem;
 
             @include mq(lg) {

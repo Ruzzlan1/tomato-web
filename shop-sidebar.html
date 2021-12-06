@@ -18,6 +18,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
         <link rel="stylesheet" href="assets/style.css" />
     </head>
     <body>
@@ -236,75 +237,329 @@
                 </div>
             </div>
         </header>
+
         <section class="page-header">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md">
-                        <h2 class="heading-1">Contact</h2>
+                        <h2 class="heading-1">Shop List</h2>
                         <p class="text-1">Tomato is a delicious restaurant website template</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <div class="shop-content">
             <div class="container">
-                <div class="row grid">
-                    <div class="col col-1">
-                        <div class="contact-box footer-adress">
-                            <h3 class="contact-box--header">adress</h3>
-                            <div class="contact-box__info">
-                                <p>
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    28 Seventh Avenue, Neew York, 10014
-                                </p>
-                                <p>
-                                    <i class="fa fa-phone"></i>
-                                    Phone: (415) 124-5678
-                                </p>
-                                <p>
-                                    <i class="fa fa-envelope"></i>
-                                    support@restaurant.com
-                                </p>
+                <div class="row">
+                    <aside class="col-lg-3">
+                        <div class="side-widget">
+                            <h5>Our Food</h5>
+                            <ul class="shop-cat">
+                                <li>
+                                    <a href="shop-full.html">
+                                        Cakes
+                                        <i class="fa fa-caret-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop-full.html">
+                                        Almonds
+                                        <i class="fa fa-caret-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop-full.html">
+                                        Furniture
+                                        <i class="fa fa-caret-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop-full.html">
+                                        Amaranth
+                                        <i class="fa fa-caret-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop-full.html">
+                                        Broad Beans
+                                        <i class="fa fa-caret-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop-full.html">
+                                        Coriander
+                                        <i class="fa fa-caret-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <div class="col-lg-9">
+                        <div class="shop-grid grid-m-3 pb-3">
+                            <select>
+                                <option>Default Sorting</option>
+                                <option>Cakes</option>
+                                <option>Breads</option>
+                                <option>Fries</option>
+                                <option>Pizza</option>
+                            </select>
+                            <!-- <div class="flex-xs pt-3"> -->
+                            <div class="sg-list">
+                                <a href="shop-sidebar.html">
+                                    <i class="fa fa-th-large"></i>
+                                </a>
+                                <a href="shop-sidebar.html">
+                                    <i class="fa fa-reorder"></i>
+                                </a>
+                            </div>
+                            <span>Showing 1-9 of 80 Results</span>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="shop-products">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="product-info">
+                                        <div class="product-img">
+                                            <img src="images/product1.png" alt="Product image" />
+                                        </div>
+
+                                        <h4>
+                                            <a href="#">Food Name</a>
+                                        </h4>
+                                        <div class="rc-ratings">
+                                            <span class="fa fa-star active"></span>
+                                            <span class="fa fa-star active"></span>
+                                            <span class="fa fa-star active"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div class="product-price">$100</div>
+
+                                        <div class="shop-meta">
+                                            <a href="">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="product-info">
+                                        <div class="product-img">
+                                            <img src="images/product2.png" alt="Product image" />
+                                        </div>
+
+                                        <h4>
+                                            <a href="#">Food Name</a>
+                                        </h4>
+                                        <div class="rc-ratings">
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </div>
+                                        <div class="product-price">$100</div>
+
+                                        <div class="shop-meta">
+                                            <a href="">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="product-info">
+                                        <div class="product-img">
+                                            <img src="images/product3.png" alt="Product image" />
+                                        </div>
+
+                                        <h4>
+                                            <a href="#">Food Name</a>
+                                        </h4>
+                                        <div class="rc-ratings">
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </div>
+                                        <div class="product-price">$100</div>
+
+                                        <div class="shop-meta">
+                                            <a href="">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="product-info">
+                                        <div class="product-img">
+                                            <img src="images/product4.png" alt="Product image" />
+                                        </div>
+
+                                        <h4>
+                                            <a href="#">Food Name</a>
+                                        </h4>
+                                        <div class="rc-ratings">
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </div>
+                                        <div class="product-price">$100</div>
+
+                                        <div class="shop-meta">
+                                            <a href="">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="product-info">
+                                        <div class="product-img">
+                                            <img src="images/5.png" alt="Product image" />
+                                        </div>
+
+                                        <h4>
+                                            <a href="#">Food Name</a>
+                                        </h4>
+                                        <div class="rc-ratings">
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </div>
+                                        <div class="product-price">$100</div>
+
+                                        <div class="shop-meta">
+                                            <a href="">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="product-info">
+                                        <div class="product-img">
+                                            <img src="images/6.png" alt="Product image" />
+                                        </div>
+
+                                        <h4>
+                                            <a href="#">Food Name</a>
+                                        </h4>
+                                        <div class="rc-ratings">
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </div>
+                                        <div class="product-price">$100</div>
+
+                                        <div class="shop-meta">
+                                            <a href="">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="product-info">
+                                        <div class="product-img">
+                                            <img src="images/7.png" alt="Product image" />
+                                        </div>
+
+                                        <h4>
+                                            <a href="#">Food Name</a>
+                                        </h4>
+                                        <div class="rc-ratings">
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </div>
+                                        <div class="product-price">$100</div>
+
+                                        <div class="shop-meta">
+                                            <a href="">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="product-info">
+                                        <div class="product-img">
+                                            <img src="images/8.png" alt="Product image" />
+                                        </div>
+
+                                        <h4>
+                                            <a href="#">Food Name</a>
+                                        </h4>
+                                        <div class="rc-ratings">
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </div>
+                                        <div class="product-price">$100</div>
+
+                                        <div class="shop-meta">
+                                            <a href="">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="product-info">
+                                        <div class="product-img">
+                                            <img src="images/9.png" alt="Product image" />
+                                        </div>
+
+                                        <h4>
+                                            <a href="#">Food Name</a>
+                                        </h4>
+                                        <div class="rc-ratings">
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star active"></span>
+                                            <span class="fas fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </div>
+                                        <div class="product-price">$100</div>
+
+                                        <div class="shop-meta">
+                                            <a href="">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-box">
-                            <h3 class="contact-box--header">Working hours</h3>
-                            <div class="contact-box__info">
-                                <p class="text-muted">10:00 am to 11:00 pm on Weekdays</p>
-                                <p class="text-muted">11:00 am to 11:30 pm on Weekends</p>
-                            </div>
-                        </div>
-                        <div class="contact-box">
-                            <h3 class="contact-box--header">follow us</h3>
-                            <div class="contact-box__social">
-                                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.dribbble.com/"><i class="fab fa-dribbble"></i></a>
-                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-2">
-                        <form action="#" class="form" id="contactForm">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Full Name" id="name" required="required" />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" placeholder="Email Address" required="required" />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Subject" required="required" id="subject" />
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" id="message" placeholder="Message" rows="5" class="form-control"></textarea>
-                            </div>
-                            <button class="btn btn-primary btn-lg">Send message</button>
-                        </form>
+                        <a href="home.html" class="btn btn-primary btn-load">Load more</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <footer class="footer" id="footer">
             <div class="container">
@@ -358,4 +613,6 @@
             </div>
         </footer>
     </body>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </html>

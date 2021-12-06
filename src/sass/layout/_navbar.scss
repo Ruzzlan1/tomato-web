@@ -1,13 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-body {
-    box-sizing: border-box;
-}
-
+@use '../base/root' as *;
+@use '../abstracts/mixins' as *;
 ul {
     list-style: none;
 }
@@ -73,6 +65,9 @@ a {
     align-items: center;
     justify-content: space-between;
 
+    // @include mq(xxl) {
+    //     font-size: 15px;
+    // }
     i {
         margin-left: 0.3rem;
     }
@@ -194,7 +189,6 @@ a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
     position: relative;
-
     &--image {
         max-width: 100%;
         display: block;
@@ -211,7 +205,7 @@ a {
         display: block;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 700;
-        font-size: 13px;
+        font-size: 1rem;
         text-transform: capitalize;
     }
 
@@ -256,6 +250,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 0.5rem;
+    // outline: 1px solid red;
 
     &--price {
         font-size: 22px;
@@ -263,8 +258,7 @@ a {
     }
 }
 
-.flex-nav:hover > .card-item,
-.card-action {
+.flex-nav:hover > .card-item {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -285,7 +279,6 @@ a {
     content: '';
     width: 100%;
     height: 3rem;
-    // border: 2px solid red;
     padding: 2rem 10rem;
 }
 
@@ -368,7 +361,7 @@ a {
 }
 
 //// media queries ////
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
     .hamburger-menu-container {
         display: flex;
     }
@@ -473,7 +466,7 @@ a {
     }
 }
 
-@media (min-width: 920px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1300px) {
     .nav {
         margin-left: 1rem;
         flex: 3;

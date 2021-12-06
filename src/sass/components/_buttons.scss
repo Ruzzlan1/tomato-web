@@ -9,7 +9,8 @@
     text-transform: uppercase;
     cursor: pointer;
     touch-action: manipulation;
-
+    font-weight: 700;
+    text-align: center;
     &:hover,
     &:focus {
         color: #333;
@@ -30,22 +31,20 @@
     &-lg {
         font-weight: 700;
         padding: 1.125em 2.5em;
+
+        @include mq(lg) {
+            font-size: 1rem;
+        }
     }
 
     &-sm {
         font-weight: 700;
         padding: 10px 0;
-        text-align: center;
-        max-width: 50%;
+        max-width: 20ch;
         @include mq(lg) {
             font-size: 1rem;
-            min-width: 42%;
-            max-width: 43%;
+            min-width: 20ch;
         }
-    }
-
-    &-center {
-        text-align: center;
     }
 
     &-secondary {
@@ -59,10 +58,46 @@
             color: #333;
         }
     }
-}
 
-@include mq(lg) {
-    .btn-lg {
-        font-size: 1rem;
+    &-account {
+        padding: 10px;
+        margin-top: 3rem;
+
+        @include mq(lg) {
+            margin-top: 0;
+            font-size: 1.125rem;
+        }
+    }
+    &-register {
+        padding: 10px 0;
+        margin-left: auto;
+        max-width: 10ch;
+
+        @include mq(lg) {
+            font-size: 1.125rem;
+        }
+    }
+
+    &-success {
+        padding: 10px;
+        color: var(--white);
+        background-color: #5cb85c;
+
+        &:hover {
+            color: var(--white);
+            background-color: #449d44;
+            border-color: #398439;
+        }
+    }
+
+    &-shop {
+        padding: 10px;
+        width: max-content;
+    }
+
+    &-load {
+        max-width: 13ch;
+        padding: 10px;
+        margin: 0 auto;
     }
 }

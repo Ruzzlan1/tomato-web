@@ -22,8 +22,12 @@
         p {
             font-size: 1.25rem;
             line-height: 2rem;
-            padding-right: 2.75rem;
+            padding-right: 2rem;
             margin: 0 0 1.5625rem;
+
+            @include mq(lg) {
+                padding-right: 2.75rem;
+            }
         }
     }
 }
@@ -103,11 +107,6 @@
     }
 }
 
-.trusted,
-.trusted-quote {
-    background-attachment: scroll;
-}
-
 .trusted {
     &-quote {
         background: url(../../../images/testimonals.png) no-repeat center center fixed;
@@ -115,7 +114,7 @@
         text-align: center;
         color: var(--white);
         padding: 3.75rem 0;
-        background-attachment: scroll;
+        backface-visibility: hidden;
 
         img {
             padding-bottom: 20px;
